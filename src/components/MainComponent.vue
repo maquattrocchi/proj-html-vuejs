@@ -1,12 +1,16 @@
 <template>
     <main>
-        MAIN
+        <jumbo-component/>
     </main>
 </template>
 
 <script>
+import JumboComponent from './JumboComponent.vue'
 export default {
-    name:'MainComponent'
+    name:'MainComponent',
+    components: { 
+        JumboComponent 
+    },
 }
 </script>
 
