@@ -1,7 +1,6 @@
 <template>
     <section>
         <div class="container position-relative">
-
             <div class="box_img">
                 <img src="../assets/images/JumboImg/slider_icon10.png" alt="">
                 <img src="../assets/images/JumboImg/slider_icon14.png" alt="">
@@ -38,9 +37,8 @@ export default {
 @import '../style/vars';
 
     section{
-        padding: 3rem;
         background-image: url('../assets/images/JumboImg/slider_slide2_background.png');
-        background-size: contain, 400px;
+        background-size: contain;
 
         .box_img{
                 position: absolute;

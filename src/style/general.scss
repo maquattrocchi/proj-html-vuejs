@@ -4,15 +4,22 @@
 //FONT
 @import '@fontsource/lato/300.css';
 @import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
 @import '@fontsource/lato/900.css';
+
+//FONT AWESOME
+$fa-font-path: './webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
 
 //STYLE
 @import './vars.scss';
 
 body{
     font-family: "Lato", sans-serif;
+    color: $textColor
 }
-//UTILITY
 a{
     text-decoration: none;
 }
@@ -24,4 +31,12 @@ a{
     cursor: pointer;
     text-transform: uppercase;
     display: inline-block;
+
+    &.btn_transparent{
+        background-color: transparent;
+        border: 1px solid $whiteColor;
+    }
+}
+section{
+    padding: 3rem 0;
 }

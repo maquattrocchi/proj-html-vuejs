@@ -18,7 +18,7 @@ export default {
     name: 'HeaderComponent',
     data(){
         return {
-            datiHeader: dati,
+            datiHeader: dati[0],
         }
     },
 }
@@ -56,7 +56,7 @@ header{
                 color: $blueColor;
                 font-weight: bold;
                 &.selected{
-                    color: white;
+                    color: $whiteColor;
                 }
             }
         }
