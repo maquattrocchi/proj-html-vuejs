@@ -25,7 +25,7 @@ export default {
     name: 'SecondSectionComponent',
     data(){
         return{
-            dati: dati[1],
+            dati: dati.datiWelcome,
         }
     }
 }

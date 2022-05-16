@@ -25,18 +25,31 @@ a{
 }
 .cs_btn{
     background-color: #fe6601;
-    color: white;
+    color: $whiteColor;
     line-height: 1.5rem;
     padding: 0.8rem;
     cursor: pointer;
     text-transform: uppercase;
     display: inline-block;
 
+    &:hover{
+        background-color: $blueColor;
+    }
     &.btn_transparent{
         background-color: transparent;
         border: 1px solid $whiteColor;
+        
+        &:hover{
+            background-color: $whiteColor;
+            color: $blueColor;
+        }
     }
 }
 section{
     padding: 3rem 0;
+}
+.section_title{
+    color: $blueColor;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
 }

@@ -1,11 +1,11 @@
-const dati = [
-    [
+const dati = {
+    datiHeader: [
         {
             icon: require("./assets/images/headerImg/home.png"),
             iconSelect: require("./assets/images/headerImg/home-2.png"),
             nome: 'Home',
             link: '#',
-            active: true,
+            active: false,
         },
         {
             icon: require("./assets/images/headerImg/document.png"),
@@ -50,7 +50,7 @@ const dati = [
             active: false,
         },
     ],
-    [
+    datiWelcome: [
         {
             icon: require("./assets/images/mainImg/schoolbag_alt.png"),
             title: 'Morbi Etos',
@@ -75,7 +75,21 @@ const dati = [
             text: ' Illo, debitis amet consectetur adipisicing elit. Aperiam dicta modi, velit vel earum iste deserunt ad, maxime culpa mollitia soluta est.',
             blueBg: true,
         },
+    ],
+    datiSlider: [ 
+        {
+            img: require("./assets/images/mainImg/slider_01.jpg"), 
+            active: false,
+        },
+        {
+            img: require("./assets/images/mainImg/slider_02.jpg"),
+            active: false,
+        },
+        {
+            img: require("./assets/images/mainImg/slider_03.jpg"),
+            active: true,
+        }
     ]
-]
+}
 
 export default dati

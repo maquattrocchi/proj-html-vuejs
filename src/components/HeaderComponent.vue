@@ -3,9 +3,9 @@
         <div class="container d-flex justify-content-between">
             <img src="../assets/images/headerImg/logo.png" alt="logo">
             <ul>
-                <li v-for="(item, index) in datiHeader" :key="index" :class="{'selected': item.active}">
-                    <img :src="item.active ? item.iconSelect : item.icon" alt="">
-                    <a :href="item.link" :class="{'selected': item.active}">{{item.nome}}</a>
+                <li v-for="(item, index) in datiHeader" :key="index" :class="{'selected': index === currentIndex}" @click="currentIndex = index">
+                    <img :src="index === currentIndex ? item.iconSelect : item.icon" alt="">
+                    <a :href="item.link" :class="{'selected': index === currentIndex}">{{item.nome}}</a>
                 </li>
             </ul>
         </div>
@@ -18,7 +18,8 @@ export default {
     name: 'HeaderComponent',
     data(){
         return {
-            datiHeader: dati[0],
+            datiHeader: dati.datiHeader,
+            currentIndex: 0,
         }
     },
 }
