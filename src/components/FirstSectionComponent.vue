@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'EnrollComponent'
+    name: 'FirstSectionComponent'
 }
 </script>
 

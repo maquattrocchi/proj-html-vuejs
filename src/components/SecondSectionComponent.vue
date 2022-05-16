@@ -22,7 +22,7 @@
 <script>
 import dati from '../dati'
 export default {
-    name: 'WelcomeComponent',
+    name: 'SecondSectionComponent',
     data(){
         return{
             dati: dati[1],
