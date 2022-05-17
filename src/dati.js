@@ -119,6 +119,28 @@ const dati = {
             class: '20',
             img: require('./assets/images/mainImg/class_04.jpg'),
         },
+    ],
+    datiCardEducation: [
+        {
+            icon: require('./assets/images/mainImg/fifthSec_01.png'),
+            title: 'Learning & Fun',
+            text: 'Praesent modea est gravida node vehicula luctus.',
+        },
+        {
+            icon: require('./assets/images/mainImg/fifthSec_02.png'),
+            title: 'Healthy Meals',
+            text: 'Terminal interdum a eleifend maecenas est morbi.',
+        },
+        {
+            icon: require('./assets/images/mainImg/fifthSec_03.png'),
+            title: 'Friendly Place',
+            text: 'Terminal interdum a eleifend maecenas est morbi.',
+        },
+        {
+            icon: require('./assets/images/mainImg/fifthSec_04.png'),
+            title: 'Children Safety',
+            text: 'Praesent modea est gravida node vehicula luctus.',
+        },
     ]
 }
 

@@ -28,14 +28,11 @@ export default {
 <style lang="scss">
 @import '../style/vars';
 header{
-    
     img {
         width: 130px;
     }
     ul{
-        list-style: none;
         display: flex;
-        margin-bottom: 0;
         gap: 0.5rem;
 
         li{

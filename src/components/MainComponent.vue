@@ -5,6 +5,7 @@
         <second-section-component/>
         <third-section-component/>
         <fourth-section-component/>
+        <fifth-section-component/>
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import FirstSectionComponent from './FirstSectionComponent.vue';
 import SecondSectionComponent from './SecondSectionComponent.vue';
 import ThirdSectionComponent from './ThirdSectionComponent.vue';
 import FourthSectionComponent from './FourthSectionComponent.vue';
+import FifthSectionComponent from './FifthSectionComponent.vue';
 export default {
     name:'MainComponent',
     components: { 
@@ -22,6 +24,7 @@ export default {
         SecondSectionComponent,
         ThirdSectionComponent,
         FourthSectionComponent,
+        FifthSectionComponent,
     },
 }
 </script>

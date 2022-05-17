@@ -1,0 +1,100 @@
+<template>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex flex-column gap-3">
+                    <p class="section_title">We have been educating children for over fifteen years. Our goal is to create a place that engages each child.</p>
+                    <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis aenean interdum.</p>
+                    <ul>
+                        <li> 
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Comprehensive reporting on individual achievement</span>
+                        </li>
+                        <li> 
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Educational field trips and school presentations</span>
+                        </li>
+                        <li> 
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Individual attention in a small-class setting</span>
+                        </li>
+                        <li> 
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Learning program with after-school care</span>
+                        </li>
+                        <li>
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Opportunities to carry out scientific investigations</span>
+                        </li>
+                        <li> 
+                            <img src="../assets/images/mainImg/list_style.png" alt="list style"> 
+                            <span class="align-middle ms-2">Positive learning environment for your child</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="row g-3">
+                        <div class="col-6" v-for="(item, index) in dati" :key="index">
+                            <div class="cs_card">
+                                <div class="cs_card_img">
+                                    <img :src="item.icon" alt="">
+                                </div>
+                                <h4>{{item.title}}</h4>
+                                <p class="text-center">{{item.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+import dati from '../dati'
+export default {
+    name:'FifthSectionComponent',
+    data(){
+        return{
+            dati: dati.datiCardEducation
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+@import '../style/vars';
+section{
+    background-color: $bgSection;
+
+    .cs_card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+
+        .cs_card_img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-color: $whiteColor;
+            border-radius: 50%;
+            position: relative;
+
+            img{
+                width: 35px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        h4{
+            color: $blueColor;
+            font-weight: 700;
+        }
+    }
+}
+
+</style>
