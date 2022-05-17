@@ -1,9 +1,7 @@
 <template>
     <section>
-        <div class="container text-center">
-            <h1>Welcome to Fable</h1>
-            <p class="mb-2">Fable daycare, preschool, and kindergarten</p>
-            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
+        <div class="container">
+            <section-title-component title="Welcome to Fable" text="Fable daycare, preschool, and kindergarten"/>
             <div class="row gy-3">
                 <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in dati" :key="index">
                     <div class="cs_card">
@@ -20,31 +18,19 @@
 </template>
 
 <script>
-//import dati from '../dati'
+import SectionTitleComponent from './SectionTitleComponent.vue'
 export default {
     name: 'SecondSectionComponent',
+    components:{
+        SectionTitleComponent,
+    },
     props: ['dati']
-    // data(){
-    //     return{
-    //         dati: dati.datiWelcome,
-    //     }
-    // }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../style/vars';
-    h1{
-        color: $blueColor;
-        font-size: 3rem;
-    }
     .cs_card{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-
         .cs_card_img{
             height: 170px;
             width: 170px;
@@ -56,10 +42,6 @@ export default {
             &.blue_bg{
                 background-color: $blueColor;
             }
-        }
-        h4{
-            color: $blueColor;
-            font-weight: 700;
         }
     }
 </style>

@@ -1,10 +1,8 @@
 <template>
     <section>
-        <div class="container text-center">
-            <h1>Our classes</h1>
-            <p class="mb-2">Our preschool program has four dedicated classes</p>
-            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
-            <div class="row text-start g-4">
+        <div class="container">
+            <section-title-component title="Our classes" text="Our preschool program has four dedicated classes"/>
+            <div class="row g-4">
                 <div class="col-12 col-md-6">
                    <p class="section_title">We provided four classes with nine to twenty children each aged twelve month to five years of age.</p>
                 </div>
@@ -40,8 +38,12 @@
 </template>
 
 <script>
+import SectionTitleComponent from './SectionTitleComponent.vue';
 export default {
     name: 'FourthSectionComponent',
+    components: {
+        SectionTitleComponent
+    },
     props: ['dati'],
 }
 </script>

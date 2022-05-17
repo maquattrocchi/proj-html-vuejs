@@ -40,7 +40,7 @@
                                     <img class="position-absolute top-50 start-50 translate-middle" :src="item.icon" alt="">
                                 </div>
                                 <h4>{{item.title}}</h4>
-                                <p class="text-center">{{item.text}}</p>
+                                <p>{{item.text}}</p>
                             </div>
                         </div>
                     </div>
@@ -63,12 +63,6 @@ section{
     background-color: $bgSection;
 
     .cs_card{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-
         .cs_card_img{
             height: 80px;
             width: 80px;
@@ -76,10 +70,6 @@ section{
             background-color: $whiteColor;
             border-radius: 50%;
             position: relative;
-        }
-        h4{
-            color: $blueColor;
-            font-weight: 700;
         }
     }
 }

@@ -1,10 +1,7 @@
 <template>
     <section>
         <div class="container text-center">
-            <h1>What's New</h1>
-            <p class="mb-2">Keep up to date with the latest news</p>
-            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
-
+            <section-title-component title="What's New" text="Keep up to date with the latest news"/>
             <div class="row gy-5">
                 <div class="col-12 col-md-4" v-for="(item,index) in dati" :key="index">
                     <div class="new_card">
@@ -28,15 +25,18 @@
                     </div>
                 </div>
             </div>
-
             <div class="cs_btn mt-5">Go to blog<i class="ms-2 fa-solid fa-angle-right"></i></div>
         </div>
     </section>
 </template>
 
 <script>
+import SectionTitleComponent from './SectionTitleComponent.vue';
 export default {
     name: 'SeventhSectioComponent',
+    components:{
+        SectionTitleComponent,
+    },
     props: ['dati'],
 }
 </script>

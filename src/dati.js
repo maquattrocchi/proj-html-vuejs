@@ -196,6 +196,36 @@ const dati = {
             author: 'Anna Brown',
             category: 'Games, General',
         },
+    ],
+    datiContact: [
+        {
+            icon: require('./assets/images/mainImg/contact_01.png'),
+            title: 'Postal Address',
+            text1: 'Fable Care Center',
+            text2: '85 Fentiman Ave',
+            text3: 'Ottawa, ON K1S 0T7',
+        },
+        {
+            icon: require('./assets/images/mainImg/contact_02.png'),
+            title: 'Phone & E-mail',
+            text1: 'Phone: 1-800-64-38',
+            text2: 'Fax: 1-800-64-39',
+            text3: 'office@fable.com',
+        },
+        {
+            icon: require('./assets/images/mainImg/contact_03.png'),
+            title: 'Business Hours',
+            text1: 'Monday - Friday',
+            text2: '8.00 am - 5.00 pm',
+            text3: 'Weekend Closed',
+        },
+        {
+            icon: require('./assets/images/mainImg/contact_04.png'),
+            title: 'Sessions',
+            text1: 'Mornings, 8 am - 12 noon',
+            text2: 'Afternoons, 1 pm - 5 pm',
+            text3: 'Full Day, 8 am - 5 pm',
+        },
     ]
 }
 
