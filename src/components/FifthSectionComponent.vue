@@ -37,7 +37,7 @@
                         <div class="col-6" v-for="(item, index) in dati" :key="index">
                             <div class="cs_card">
                                 <div class="cs_card_img">
-                                    <img :src="item.icon" alt="">
+                                    <img class="position-absolute top-50 start-50 translate-middle" :src="item.icon" alt="">
                                 </div>
                                 <h4>{{item.title}}</h4>
                                 <p class="text-center">{{item.text}}</p>
@@ -81,14 +81,6 @@ section{
             background-color: $whiteColor;
             border-radius: 50%;
             position: relative;
-
-            img{
-                width: 35px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
         }
         h4{
             color: $blueColor;

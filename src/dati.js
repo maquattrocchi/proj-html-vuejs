@@ -141,6 +141,32 @@ const dati = {
             title: 'Children Safety',
             text: 'Praesent modea est gravida node vehicula luctus.',
         },
+    ],
+    datiCarousel:[
+        {
+            text: 'Fable Kindergarten is a great place for my daughter to start her schooling experience. It’s welcoming and safe and my daughter loves being there.',
+            author: 'Matthew D. Campbell',
+        },
+        {
+            text: 'I have a 1 year old and a 5 year old who have been attending for a yaer now. I can not tell you how much I adore and appreciate all of the wonderful staff',
+            author: 'Kenneth M. Garcia',
+        },
+        {
+            text: 'I have to say that I have 2 children ages 5 and 2 and have used various daycare in Kindergartens and this is by far the very best I have ever used.',
+            author: 'Cecil J. Kirk',
+        },
+        {
+            text: 'Fable Kindergarten is a great place for my daughter to start her schooling experience. It’s welcoming and safe and my daughter loves being there.',
+            author: 'Joe R. Hamblen',
+        },
+        {
+            text: 'This letter is to recognize your staff for doing an excellent job teaching my son. His skill level is significantly better since attending Fable.',
+            author: 'Tony L. Robinette',
+        },
+        {
+            text: 'I have to say that I have 2 children ages 5 and 2 and have used various daycare in Kindergartens and this is by far the very best I have ever used.',
+            author: 'Emma E. Shook',
+        },
     ]
 }
 

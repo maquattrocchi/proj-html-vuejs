@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between h-100">
             <img src="../assets/images/headerImg/logo.png" alt="logo">
             <ul>
                 <li v-for="(item, index) in datiHeader" :key="index" :class="{'selected': index === currentIndex}" @click="currentIndex = index">
@@ -28,12 +28,18 @@ export default {
 <style lang="scss">
 @import '../style/vars';
 header{
+    background-color: $whiteColor;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     img {
         width: 130px;
     }
     ul{
         display: flex;
-        gap: 0.5rem;
 
         li{
             display: flex;

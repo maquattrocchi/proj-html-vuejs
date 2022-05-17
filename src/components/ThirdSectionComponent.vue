@@ -157,6 +157,10 @@ export default {
                 background-color: $orangeColor;
                 color: $whiteColor;
                 padding: 0.8rem 1rem;
+
+                &:hover{
+                    background-color: $blueColor;
+                }
             }
             .next{
                 right: 0;

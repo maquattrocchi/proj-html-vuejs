@@ -8,7 +8,7 @@
                 <div class="col-3" v-for="(item, index) in dati" :key="index">
                     <div class="cs_card">
                         <div class="cs_card_img" :class="{'blue_bg': item.blueBg}">
-                            <img :src="item.icon" alt="">
+                            <img class="position-absolute top-50 start-50 translate-middle" :src="item.icon" alt="">
                         </div>
                         <h4>{{item.title}}</h4>
                         <p>{{item.text}}</p>
@@ -54,13 +54,6 @@ export default {
 
             &.blue_bg{
                 background-color: $blueColor;
-            }
-            img{
-                width: 60px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
             }
         }
         h4{
