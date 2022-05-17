@@ -167,6 +167,32 @@ const dati = {
             text: 'I have to say that I have 2 children ages 5 and 2 and have used various daycare in Kindergartens and this is by far the very best I have ever used.',
             author: 'Emma E. Shook',
         },
+    ],
+    datiNewCard: [
+        {
+            data: 'October 03, 2014',
+            img: require('./assets/images/mainImg/new_card_01.jpg'),
+            title: 'Drawing and Painting Lessons',
+            text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
+            author: 'Anna Brown',
+            category: 'Events, Fun',
+        },
+        {
+            data: 'October 03, 2014',
+            img: require('./assets/images/mainImg/new_card_02.jpg'),
+            title: 'Fall Parents Meeting Day',
+            text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
+            author: 'Anna Brown',
+            category: 'Dance, Education',
+        },
+        {
+            data: 'September 20, 2014',
+            img: require('./assets/images/mainImg/new_card_03.jpg'),
+            title: 'Birthday in Kindergarten',
+            text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
+            author: 'Anna Brown',
+            category: 'Games, General',
+        },
     ]
 }
 

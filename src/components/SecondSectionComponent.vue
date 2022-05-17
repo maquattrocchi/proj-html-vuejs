@@ -2,7 +2,7 @@
     <section>
         <div class="container text-center">
             <h1>Welcome to Fable</h1>
-            <p>Fable daycare, preschool, and kindergarten</p>
+            <p class="mb-2">Fable daycare, preschool, and kindergarten</p>
             <img src="../assets/images/mainImg/header_divider.png" alt="">
             <div class="row mt-5">
                 <div class="col-3" v-for="(item, index) in dati" :key="index">

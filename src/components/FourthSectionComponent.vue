@@ -2,7 +2,7 @@
     <section>
         <div class="container text-center">
             <h1>Our classes</h1>
-            <p>Our preschool program has four dedicated classes</p>
+            <p class="mb-2">Our preschool program has four dedicated classes</p>
             <img src="../assets/images/mainImg/header_divider.png" alt="">
             <div class="row mt-3 g-5 text-start">
                 <div class="col-6">
@@ -66,9 +66,7 @@ h1{
         padding: 1rem;
         background-color: $blueColor;
         color: $whiteColor;
-        p{
-            margin: 0;
-        }
+
         .info{
             width: 50%;
 

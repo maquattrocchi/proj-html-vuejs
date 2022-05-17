@@ -7,6 +7,7 @@
         <fourth-section-component/>
         <fifth-section-component/>
         <sixth-section-component/>
+        <seventh-section-component/>
     </main>
 </template>
 
@@ -18,6 +19,7 @@ import ThirdSectionComponent from './ThirdSectionComponent.vue';
 import FourthSectionComponent from './FourthSectionComponent.vue';
 import FifthSectionComponent from './FifthSectionComponent.vue';
 import SixthSectionComponent from './SixthSectionComponent.vue';
+import SeventhSectionComponent from './SeventhSectionComponent.vue';
 export default {
     name:'MainComponent',
     components: { 
@@ -28,6 +30,7 @@ export default {
         FourthSectionComponent,
         FifthSectionComponent,
         SixthSectionComponent,
+        SeventhSectionComponent,
     },
 }
 </script>

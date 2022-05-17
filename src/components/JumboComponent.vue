@@ -76,7 +76,6 @@ export default {
             z-index: 1;
             p{
                 font-size: 3rem;
-                margin-bottom: 0;
                 color: $blueColor
             }
             p:first-of-type{
