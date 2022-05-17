@@ -1,8 +1,9 @@
 <template>
     <section>
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex gap-3 justify-content-between align-items-center">
             <p class="fw-light">{{text}}</p>
-            <div class="cs_btn btn_transparent">{{btn}}
+            <div class="cs_btn btn_transparent">
+                <a href="#">{{btn}}</a> 
                 <i class="ms-2 fa-solid fa-angle-right"></i>
             </div>
         </div>
@@ -22,7 +23,6 @@ export default {
         background-image: url('../assets/images/mainImg/pattern.png');
         background-attachment: fixed;
         color: $whiteColor;
-
         p{
             font-size: 2rem;
         }

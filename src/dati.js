@@ -171,6 +171,7 @@ const dati = {
     datiNewCard: [
         {
             data: 'October 03, 2014',
+            number: '42',
             img: require('./assets/images/mainImg/new_card_01.jpg'),
             title: 'Drawing and Painting Lessons',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
@@ -179,6 +180,7 @@ const dati = {
         },
         {
             data: 'October 03, 2014',
+            number: '19',
             img: require('./assets/images/mainImg/new_card_02.jpg'),
             title: 'Fall Parents Meeting Day',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
@@ -187,6 +189,7 @@ const dati = {
         },
         {
             data: 'September 20, 2014',
+            number: '22',
             img: require('./assets/images/mainImg/new_card_03.jpg'),
             title: 'Birthday in Kindergarten',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',

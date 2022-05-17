@@ -34,16 +34,15 @@
 </template>
 
 <script>
-import dati from '../dati'
 import FirstSectionComponent from './FirstSectionComponent.vue'
 export default {
     name:'SixthSectionComponent',
     components: {
         FirstSectionComponent 
     },
+    props:['dati'],
     data(){
         return{
-            dati: dati.datiCarousel,
             currentIndex: 0,
         }
     },

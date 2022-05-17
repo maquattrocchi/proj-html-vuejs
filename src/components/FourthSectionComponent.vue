@@ -3,15 +3,15 @@
         <div class="container text-center">
             <h1>Our classes</h1>
             <p class="mb-2">Our preschool program has four dedicated classes</p>
-            <img src="../assets/images/mainImg/header_divider.png" alt="">
-            <div class="row mt-3 g-5 text-start">
-                <div class="col-6">
+            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
+            <div class="row text-start g-4">
+                <div class="col-12 col-md-6">
                    <p class="section_title">We provided four classes with nine to twenty children each aged twelve month to five years of age.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas</p>
                 </div>
-                <div class="col-6 class_card" v-for="(item,index) in dati" :key="index">
+                <div class="col-12 col-lg-6 class_card" v-for="(item,index) in dati" :key="index">
                     <div class="card_description col-6">
                         <div>
                             <p class="fs-4">{{item.title}}</p>
@@ -40,14 +40,9 @@
 </template>
 
 <script>
-import dati from '../dati';
 export default {
     name: 'FourthSectionComponent',
-    data(){
-        return{
-            dati: dati.datiClassCard
-        }
-    }
+    props: ['dati'],
 }
 </script>
 

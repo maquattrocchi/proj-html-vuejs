@@ -2,23 +2,25 @@
     <section>
         <div class="container position-relative">
             <div class="box_img">
-                <img src="../assets/images/JumboImg/slider_icon10.png" alt="">
-                <img src="../assets/images/JumboImg/slider_icon14.png" alt="">
-                <img src="../assets/images/JumboImg/slider_icon11.png" alt="">
-                <img src="../assets/images/JumboImg/slider_icon12.png" alt="">
-                <img src="../assets/images/JumboImg/slider_icon13.png" alt="">
+                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon10.png" alt="">
+                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon14.png" alt="">
+                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon11.png" alt="">
+                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon12.png" alt="">
+                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon13.png" alt="">
             </div>
 
-            <img class="img_bg" src="../assets/images/JumboImg/slider_slide2_img2.png" alt="">
+            <img class="img_bg d-none d-lg-block" src="../assets/images/JumboImg/slider_slide2_img2.png" alt="">
 
             <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <p class="fw-bold">Friendly atmosphere</p>
                     <p class="fw-bold">Welcoming Place</p>
                     <p class="fw-light">For Every Child</p>
-                    <div class="cs_btn mt-4">Buy this theme now</div>
+                    <div class="cs_btn mt-4">
+                        <a href="#">Buy this theme now</a>
+                    </div>
                 </div>
-                <div class="col-5">
+                <div class="col-5 d-none d-md-block">
                     <img src="../assets/images/JumboImg/slider_slide2_img1.png" alt="">
                 </div>
             </div>

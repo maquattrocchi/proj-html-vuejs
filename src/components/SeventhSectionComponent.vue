@@ -3,15 +3,17 @@
         <div class="container text-center">
             <h1>What's New</h1>
             <p class="mb-2">Keep up to date with the latest news</p>
-            <img src="../assets/images/mainImg/header_divider.png" alt="">
-            <div class="row mt-4">
-                <div class="col-4" v-for="(item,index) in dati" :key="index">
+            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
+
+            <div class="row gy-5">
+                <div class="col-12 col-md-4" v-for="(item,index) in dati" :key="index">
                     <div class="new_card">
                         <span>{{item.data}}</span>
                         <div class="position-relative">
                             <img class="img-fluid" :src="item.img" alt="">
+                            <div class="cs_number">{{item.number}}</div>
                         </div>
-                        <p>{{item.title}}</p>
+                        <p class="fw-bold">{{item.title}}</p>
                         <p>{{item.text}}</p>
                         <div class="d-flex cs_border">
                             <div class="col-6">
@@ -26,19 +28,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="cs_btn mt-5">Go to blog<i class="ms-2 fa-solid fa-angle-right"></i></div>
         </div>
     </section>
 </template>
 
 <script>
-import dati from '../dati'
 export default {
     name: 'SeventhSectioComponent',
-    data(){
-        return{
-            dati: dati.datiNewCard
-        }
-    }
+    props: ['dati'],
 }
 </script>
 
@@ -51,11 +50,20 @@ h1{
 .new_card{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.3rem;
     text-align: start;
     p:first-of-type{
         color: $blueColor;
         font-size: 1.3rem;
+    }
+    .cs_number{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $orangeColor;
+        padding: 0.1rem 0.5rem;
+        font-size: 1.5rem;
+        color: $whiteColor
     }
     .cs_border{
         padding-top: 0.7rem;

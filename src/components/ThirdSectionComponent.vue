@@ -1,9 +1,9 @@
 <template>
     <section>
         <div class="container">
-            <div class="row g-5 align-items-center">
+            <div class="row gy-5 align-items-center">
                 <!-- left side -->
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="info">Overview</div>
                     <div class="d-inline-block info">Our Mission</div>
 
@@ -37,7 +37,9 @@
                     </div>
                 </div>
                 <!-- right side -->
-                <div class="col-6 d-flex flex-column gap-3 slider">
+                <div class="col-12 col-lg-6 slider">
+                    <div class="d-flex flex-column gap-3 ">
+
                     <div class="cs_item">
                         <img :src="datiSlider[currentIndexActive].img" alt=""/>
 
@@ -55,6 +57,7 @@
                             <img class="cs_thumb" :class="{'active': index === currentIndexActive}" :src="thumb.img" alt="">
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,13 +65,11 @@
 </template>
 
 <script>
-import dati from '../dati';
-
 export default {
     name:'ThirdSectionComponent',
+    props:['datiSlider'],
     data(){
         return {
-            datiSlider: dati.datiSlider,
             currentIndexActive: 2,
         }
     },

@@ -1,8 +1,8 @@
 <template>
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-6 d-flex flex-column gap-3">
+            <div class="row gy-5">
+                <div class="col-12 col-md-6 d-flex flex-column gap-3">
                     <p class="section_title">We have been educating children for over fifteen years. Our goal is to create a place that engages each child.</p>
                     <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis aenean interdum.</p>
                     <ul>
@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="row g-3">
                         <div class="col-6" v-for="(item, index) in dati" :key="index">
                             <div class="cs_card">
@@ -51,14 +51,9 @@
 </template>
 
 <script>
-import dati from '../dati'
 export default {
     name:'FifthSectionComponent',
-    data(){
-        return{
-            dati: dati.datiCardEducation
-        }
-    }
+    props: ['dati'],
 }
 </script>
 

@@ -3,9 +3,9 @@
         <div class="container text-center">
             <h1>Welcome to Fable</h1>
             <p class="mb-2">Fable daycare, preschool, and kindergarten</p>
-            <img src="../assets/images/mainImg/header_divider.png" alt="">
-            <div class="row mt-5">
-                <div class="col-3" v-for="(item, index) in dati" :key="index">
+            <img class="mb-5" src="../assets/images/mainImg/header_divider.png" alt="">
+            <div class="row gy-3">
+                <div class="col-12 col-md-6 col-lg-3" v-for="(item, index) in dati" :key="index">
                     <div class="cs_card">
                         <div class="cs_card_img" :class="{'blue_bg': item.blueBg}">
                             <img class="position-absolute top-50 start-50 translate-middle" :src="item.icon" alt="">
@@ -20,14 +20,15 @@
 </template>
 
 <script>
-import dati from '../dati'
+//import dati from '../dati'
 export default {
     name: 'SecondSectionComponent',
-    data(){
-        return{
-            dati: dati.datiWelcome,
-        }
-    }
+    props: ['dati']
+    // data(){
+    //     return{
+    //         dati: dati.datiWelcome,
+    //     }
+    // }
 }
 </script>
 
