@@ -4,6 +4,7 @@
         <first-section-component/>
         <second-section-component/>
         <third-section-component/>
+        <fourth-section-component/>
     </main>
 </template>
 
@@ -12,6 +13,7 @@ import JumboComponent from './JumboComponent.vue';
 import FirstSectionComponent from './FirstSectionComponent.vue';
 import SecondSectionComponent from './SecondSectionComponent.vue';
 import ThirdSectionComponent from './ThirdSectionComponent.vue';
+import FourthSectionComponent from './FourthSectionComponent.vue';
 export default {
     name:'MainComponent',
     components: { 
@@ -19,6 +21,7 @@ export default {
         FirstSectionComponent,
         SecondSectionComponent,
         ThirdSectionComponent,
+        FourthSectionComponent,
     },
 }
 </script>

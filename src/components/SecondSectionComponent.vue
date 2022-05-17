@@ -4,7 +4,7 @@
             <h1>Welcome to Fable</h1>
             <p>Fable daycare, preschool, and kindergarten</p>
             <img src="../assets/images/mainImg/header_divider.png" alt="">
-            <div class="row my-5">
+            <div class="row mt-5">
                 <div class="col-3" v-for="(item, index) in dati" :key="index">
                     <div class="cs_card">
                         <div class="cs_card_img" :class="{'blue_bg': item.blueBg}">

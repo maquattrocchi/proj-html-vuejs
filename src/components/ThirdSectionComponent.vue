@@ -135,6 +135,7 @@ export default {
         .slider{
             img{
                 width: 100%;
+                cursor: pointer;
             }
             .cs_item{
                 position: relative;

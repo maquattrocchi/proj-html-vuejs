@@ -89,6 +89,36 @@ const dati = {
             img: require("./assets/images/mainImg/slider_03.jpg"),
             active: true,
         }
+    ],
+    datiClassCard: [
+        {
+            title: 'Little Lambs',
+            age: '12-24',
+            type: 'Month olds',
+            class: '9',
+            img: require('./assets/images/mainImg/class_01.jpg'),
+        },
+        {
+            title: 'Bouncy Bears',
+            age: '2-3',
+            type: 'Years olds',
+            class: '12',
+            img: require('./assets/images/mainImg/class_02.jpg'),
+        },
+        {
+            title: 'Tenderhearts',
+            age: '3-4',
+            type: 'Years olds',
+            class: '15',
+            img: require('./assets/images/mainImg/class_03.jpg'),
+        },
+        {
+            title: 'Shining Stars',
+            age: '4-5',
+            type: 'Years olds',
+            class: '20',
+            img: require('./assets/images/mainImg/class_04.jpg'),
+        },
     ]
 }
 
