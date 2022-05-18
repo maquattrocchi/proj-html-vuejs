@@ -41,7 +41,7 @@
                     <div class="d-flex flex-column gap-3 ">
 
                     <div class="cs_item">
-                        <img :src="datiSlider[currentIndexActive].img" alt=""/>
+                        <img :class="{'animation' : animation}" :src="datiSlider[currentIndexActive].img" alt=""/>
 
                         <div class="prev" @click="prevSlide">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -71,14 +71,23 @@ export default {
     data(){
         return {
             currentIndexActive: 2,
+            animation: false,
         }
     },
     methods:{
         nextSlide(){
-           this.currentIndexActive === this.datiSlider.length - 1 ? this.currentIndexActive = 0 : this.currentIndexActive++
+            this.animation = false;
+            this.currentIndexActive === this.datiSlider.length - 1 ? this.currentIndexActive = 0 : this.currentIndexActive++
+            setTimeout(() => {
+                this.animation = true;
+            }, 1);
         },
         prevSlide(){
+            this.animation = false;
             this.currentIndexActive === 0 ? this.currentIndexActive = this.datiSlider.length - 1 : this.currentIndexActive--
+            setTimeout(() => {
+                this.animation = true;
+            }, 1);
         },
     }
 }
@@ -166,6 +175,13 @@ export default {
             .next{
                 right: 0;
             }
+            .animation{
+                background-color: $orangeColor;
+            }
         }
+    }
+    @keyframes fade {
+        from{opacity: 0.4}
+        to {opacity: 1}
     }
 </style>

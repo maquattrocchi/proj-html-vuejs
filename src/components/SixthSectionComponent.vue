@@ -17,16 +17,16 @@
 
         <first-section-component text="See Our Kindergarten Photo Gallery!" btn="View Gallery"/>
 
-        <div class="carousel">
+        <div class="carousel" @mouseover="stopScroll()" @mouseleave="autoScroll()">
             <div class="d-flex flex-column gap-4">
                 <div class="img_box">
                     <img class="position-absolute top-50 start-50 translate-middle" src="../assets/images/mainImg/quote_carousel.png" alt="">
                 </div>
-                <h2 class="fw-light">{{dati[currentIndex].text}}</h2>
+                <h2 class="fw-light" :class="{'animation' : setAnimation}">{{dati[currentIndex].text}}</h2>
                 <div class="cs_line"></div>
                 <p>{{dati[currentIndex].author}}</p>
                 <div class="carousel_control d-flex gap-3">
-                    <div v-for="(item,index) in 6" :key="index" :class="{'selected': index === currentIndex}" @click="currentIndex = index"></div>
+                    <div v-for="(item,index) in 6" :key="index" :class="{'selected': index === currentIndex}" @click="selectSlide(index)"></div>
                 </div>
             </div>
         </div>
@@ -44,13 +44,30 @@ export default {
     data(){
         return{
             currentIndex: 0,
+            setAnimation: false,
+            timer: null,
         }
     },
     methods:{
         autoScroll(){
-            setInterval(()=>{
+            this.timer = setInterval(()=>{
+                this.setAnimation = false;
                 this.currentIndex === this.dati.length -1 ? this.currentIndex = 0 : this.currentIndex++
+                setTimeout(() => {
+                    this.setAnimation = true;
+                }, 1);
             },5000)
+        },
+        stopScroll(){
+            clearInterval(this.timer);
+            this.timer = null;
+        },
+        selectSlide(index){
+            this.setAnimation = false;
+            setTimeout(() => {
+                this.setAnimation = true;
+            }, 1);
+            this.currentIndex = index
         }
     },
     mounted(){
@@ -102,6 +119,19 @@ export default {
                     }
                 }
             }
+            .animation{
+                animation: text-animation 0.6s linear;
+            }
         }
     }
+    @keyframes text-animation {
+        0% {
+            transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+}
 </style>
