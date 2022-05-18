@@ -14,6 +14,7 @@
         </section>
         <!-- /mappa -->
         <eighth-section-componenet :dati="dati.datiContact"/>
+        <a href="#" class="go_top"><img src="../assets/images/mainImg/go_to_top.png" alt=""></a>
     </main>
 </template>
 
@@ -49,9 +50,19 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../style/vars';
     main{
         margin-top: 90px;
+    }
+    .go_top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: $textColor;
+        img{
+            width: 40px;
+        }
     }
     @media screen and (max-width: 991px) {
     main{

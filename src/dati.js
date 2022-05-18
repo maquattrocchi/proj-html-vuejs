@@ -6,6 +6,7 @@ const dati = {
             nome: 'Home',
             link: '#',
             active: false,
+            list: ['Home Style I','Home Style II','Home Style III','Home Style IV','Home - Scrolling Page']
         },
         {
             icon: require("./assets/images/headerImg/document.png"),
@@ -13,6 +14,7 @@ const dati = {
             nome: 'Pages',
             link: '#',
             active: false,
+            list:['About us I', 'About us II', 'Our Services I', 'Our Services II', 'Page Right Sidebar', 'Page Left Sidebar'],
         },
         {
             icon: require("./assets/images/headerImg/printer.png"),
@@ -20,6 +22,7 @@ const dati = {
             nome: 'Blog',
             link: '#',
             active: false,
+            list: ['Blog Full Width','Blog Right SSidebar', 'Blog Left Sidebar', 'Post Full Width', 'Post Right Sidebar', 'Post Left Sidebar']
         },
         {
             icon: require("./assets/images/headerImg/cart.png"),
@@ -27,6 +30,7 @@ const dati = {
             nome: 'Shop',
             link: '#',
             active: false,
+            list: ['Cart', 'Products', 'My account', 'List Of WooCommerce Widgets']
         },
         {
             icon: require("./assets/images/headerImg/lab.png"),
@@ -34,6 +38,7 @@ const dati = {
             nome: 'Shortcodes',
             link: '#',
             active: false,
+            list: ['Accordion', 'Audio', 'Background Video', 'Call To Action', 'Class', 'Contact Form','counter List']
         },
         {
             icon: require("./assets/images/headerImg/chat.png"),
@@ -41,6 +46,7 @@ const dati = {
             nome: 'Support',
             link: '#',
             active: false,
+            list: ['Support I', 'Support II']
         },
         {
             icon: require("./assets/images/headerImg/envelope.png"),
@@ -48,6 +54,7 @@ const dati = {
             nome: 'Contact',
             link: '#',
             active: false,
+            list: ['Contact Us I', 'Contact Us II']
         },
     ],
     datiWelcome: [
