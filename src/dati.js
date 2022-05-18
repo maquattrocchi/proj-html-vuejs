@@ -173,6 +173,7 @@ const dati = {
             data: 'October 03, 2014',
             number: '42',
             img: require('./assets/images/mainImg/new_card_01.jpg'),
+            imgFoot:  require('./assets/images/footerImg/footer_01.jpg'),
             title: 'Drawing and Painting Lessons',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
             author: 'Anna Brown',
@@ -182,6 +183,7 @@ const dati = {
             data: 'October 03, 2014',
             number: '19',
             img: require('./assets/images/mainImg/new_card_02.jpg'),
+            imgFoot:  require('./assets/images/footerImg/footer_02.jpg'),
             title: 'Fall Parents Meeting Day',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
             author: 'Anna Brown',
@@ -191,6 +193,7 @@ const dati = {
             data: 'September 20, 2014',
             number: '22',
             img: require('./assets/images/mainImg/new_card_03.jpg'),
+            imgFoot:  require('./assets/images/footerImg/footer_03.jpg'),
             title: 'Birthday in Kindergarten',
             text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum',
             author: 'Anna Brown',
@@ -226,6 +229,10 @@ const dati = {
             text2: 'Afternoons, 1 pm - 5 pm',
             text3: 'Full Day, 8 am - 5 pm',
         },
+    ],
+    datiFooter:[
+        ['October 2014 (2)', 'Semptember 2014 (2)', 'August 2012 (2)', 'July 2014 (2)', 'June 2014 (2)', 'May 2014 (1)'],
+        ['Friendly and welcoming place', 'Science and art classes', 'Positive learning environment', 'Educational field trips', 'Writing and reading classes', 'Science and art classes']
     ]
 }
 

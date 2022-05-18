@@ -2,11 +2,11 @@
     <section>
         <div class="container position-relative">
             <div class="box_img">
-                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon10.png" alt="">
-                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon14.png" alt="">
-                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon11.png" alt="">
-                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon12.png" alt="">
-                <img class="d-none d-md-block" src="../assets/images/JumboImg/slider_icon13.png" alt="">
+                <img class="d-none d-md-inline-block" src="../assets/images/JumboImg/slider_icon10.png" alt="">
+                <img class="d-none d-md-inline-block" src="../assets/images/JumboImg/slider_icon14.png" alt="">
+                <img class="d-none d-md-inline-block" src="../assets/images/JumboImg/slider_icon11.png" alt="">
+                <img class="d-none d-md-inline-block" src="../assets/images/JumboImg/slider_icon12.png" alt="">
+                <img class="d-none d-md-inline-block" src="../assets/images/JumboImg/slider_icon13.png" alt="">
             </div>
 
             <img class="img_bg d-none d-lg-block" src="../assets/images/JumboImg/slider_slide2_img2.png" alt="">

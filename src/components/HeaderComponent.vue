@@ -26,16 +26,15 @@
 </template>
 
 <script>
-import dati from '../dati'
 export default {
     name: 'HeaderComponent',
     data(){
         return {
-            datiHeader: dati.datiHeader,
             currentIndex: 0,
             selected: false,
         }
     },
+    props:['datiHeader']
 }
 </script>
 
