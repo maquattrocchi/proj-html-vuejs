@@ -1,17 +1,21 @@
 <template>
     <div>
         <div class="d-flex">
-            <div class="col-3">
+            <div class="col-3 position-relative">
                 <img class="img-fluid" src="../assets/images/mainImg/slider_02.jpg" alt="">
+                <div class="plus_box"><i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 position-relative">
                 <img class="img-fluid" src="../assets/images/mainImg/gallery_02.jpg" alt="">
+                <div class="plus_box"><i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 position-relative">
                 <img class="img-fluid" src="../assets/images/mainImg/gallery_03.jpg" alt="">
+                <div class="plus_box"><i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 position-relative">
                 <img class="img-fluid" src="../assets/images/mainImg/class_01.jpg" alt="">
+                <div class="plus_box"><i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i></div>
             </div>
         </div>
 
@@ -76,8 +80,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../style/vars';
+.col-3{
+    cursor: pointer;
+    &:hover{
+        .plus_box{
+            display: block;
+        }
+    }
+}
     .carousel{
         padding: 5.5rem;
         background-image: url('../assets/images/mainImg/bg_sixth.jpg');
@@ -133,5 +145,6 @@ export default {
             transform: scale(1);
             opacity: 1;
         }
-}
+    }
+    
 </style>

@@ -8,6 +8,7 @@
                         <span>{{item.data}}</span>
                         <div class="position-relative">
                             <img class="img-fluid" :src="item.img" alt="">
+                            <div class="plus_box"><i class="fa-solid fa-plus position-absolute top-50 start-50 translate-middle"></i></div>
                             <div class="cs_number">{{item.number}}</div>
                         </div>
                         <p class="fw-bold">{{item.title}}</p>
@@ -52,6 +53,12 @@ h1{
     flex-direction: column;
     gap: 1.3rem;
     text-align: start;
+    .position-relative:hover{
+        cursor: pointer;
+        .plus_box{
+            display: block;
+        }
+    }
     p:first-of-type{
         color: $blueColor;
         font-size: 1.3rem;

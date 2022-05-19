@@ -176,7 +176,7 @@ export default {
                 right: 0;
             }
             .animation{
-                background-color: $orangeColor;
+                animation: fade 0.5s linear
             }
         }
     }
